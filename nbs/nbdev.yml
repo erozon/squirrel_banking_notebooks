@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "squirrel_banking_notebooks"
+  site-url: "https://erozon.github.io/squirrel_banking_notebooks"
+  description: "My thesis at UBC concentrated on quantifying the evolutionary origins of patience. This repository includes some of the Jupyter Notebooks used for exploration and experimentation."
+  repo-branch: main
+  repo-url: "https://github.com/erozon/squirrel_banking_notebooks"

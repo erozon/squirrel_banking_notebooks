@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "fitness.html",
+    "href": "fitness.html",
+    "title": "Fitness",
+    "section": "",
+    "text": "Fitness is the metric determining an individual’s evolutionary success. An individual with higher fitness is expected to reproduce more and survive better than an individual with lower fitness. Thus, iterating over many generations, the higher fitness individual’s lineage will continue, whereas the lower fitness individual’s lineage will die out. In other words, we expect survival of the fittest.\nWhile the principle of survival of the fittest is straightforward, determining a measure of fitness which functions in practice is a little more challenging. One candidate for fitness is the number of offspring an individual produces over a lifetime. Suppose an individual has discrete age categories \\(a \\in \\{0, 1, \\ldots, A\\}\\). Further suppose the survival probability and expected number of offspring (conditional on still being alive) are described by \\((s_0, s_1, \\ldots, s_{A-1}, s_A = 0)\\) and \\((b_0, b_1, \\ldots, b_A)\\). Then total expected lifetime reproductive output is described by:\n\\[R_0 = \\sum\\limits_{a = 0}^{A} s_0\\cdots s_{a-1} b_a \\]\nA continuous time analogue, wherein \\(s_a\\) and \\(b_a\\) describe the probability density of survival and reproduction, is given by:\n\\[R_0 = \\int_0^A s_a b_a \\text{d}a\\]\nLifetime reproductive output has a few appealing properties. \\(R_0\\) is algebraically straightforward to compute, and the components \\(s_a\\) and \\(b_a\\) can be empirically measured in practice. For my purposes, however, \\(R_0\\) accounts for time only through survival probability. As a concrete example: if an individual is guaranteed to survive from age \\(5\\) to \\(6\\), then reproduction at either age results is identical fitness outcomes, if fitness is measured by \\(R_0\\). At the same time, a population which reproduces earlier (with no downstream negative effects) will tend to grow faster and thus perform better. We want a measure of fitnes which accounts for the evolutionary pressure to reproduce quicker."
+  },
+  {
+    "objectID": "firstattempt.html",
+    "href": "firstattempt.html",
+    "title": "A first attempt to model the evolution of patience",
+    "section": "",
+    "text": "Squirrels in nature store nuts for the winter. Throughout these explorations, squirrels represent agents who may forego an immediate reward (nuts) in favour of a delayed alternative. Assertions made about squirrels are to be interpreted as descriptions of how squirrels in the model behave, and are not necessarily zoologically accurate.\nA squirrel forrages daily for nuts, finding either \\(0\\), \\(1\\), or \\(2\\) nuts, with probabilities \\(p_0\\), \\(p_1\\), and \\(p_2\\) respectively. A squirrel who consumes \\(0\\) nuts dies. A squirrel who finds \\(1\\) nut keeps itself alive until the following day. And a squirrel who finds \\(2\\) nuts not only stays alive, but produces an offspring who the next day proceeds to live a life entirely independently of its parent.\nSuppose we allow our squirrel to bank nuts. By keeping a cache of nuts saved, a squirrel may survive despite finding \\(0\\) nuts, by dipping into its reserves and consuming from the cache. Banking helps a squirrel to live a longer life. However, banking also delays reproduction. All else equal, evolutionary processes favour faster reproduction and not dying (enabling one to reproduce more)."
+  },
+  {
+    "objectID": "squirrelbanking.html",
+    "href": "squirrelbanking.html",
+    "title": "Squirrel Banking",
+    "section": "",
+    "text": "Roughly speaking, patience describes an individual’s (more generally, an agent’s) willingness to wait for a delayed reward. A reward of magnitude \\(r\\) received at delay \\(t &gt; 0\\) is typically assumed to be of less intrinsic value to the recipient than if the same reward \\(r\\) were received with no delay (\\(t = 0\\)). A discounting function quantifies the extent to which an individual perceives the relative value of a reward changing as delay to receipt varies."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "squirrel_banking_notebooks",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "squirrel_banking_notebooks",
+    "section": "Install",
+    "text": "Install\npip install squirrel_banking_notebooks"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "squirrel_banking_notebooks",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2"
+  }
+]
